@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var labelTextView: UILabel!
+    @IBOutlet var inputTextField: UITextField!
+    
+    @IBAction func changeTextButton(_ sender: Any) {
+        print("Button Tapped")
+        labelTextView.text = inputTextField.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        labelTextView.text = "My Old Text"
     }
 
 
