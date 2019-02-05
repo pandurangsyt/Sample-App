@@ -9,19 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var labelTextView: UILabel!
-    @IBOutlet var inputTextField: UITextField!
-    
-    @IBAction func changeTextButton(_ sender: Any) {
-        print("Button Tapped")
-        labelTextView.text = inputTextField.text
+        
+    @IBAction func seeArchivesAction(_ sender: Any) {
+        print("See Archives Tapped")
+    }
+    @IBOutlet var catImageView: UIImageView!
+    @IBAction func addStoryAction(_ sender: Any) {
+        print("Add Stories Tapped")
+    }
+    @IBAction func cameraAction(_ sender: Any) {
+        print("Camera Button Tapped")
+    }
+    @IBAction func chatAction(_ sender: Any) {
+        print("Chat Button Tapped")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        labelTextView.text = "My Old Text"
+        catImageView.layer.borderColor = UIColor.white.cgColor
+        catImageView.layer.cornerRadius = 10.0
+        catImageView.layer.borderWidth = 1.0
+        catImageView.layer.masksToBounds = true
+        
     }
 
 
