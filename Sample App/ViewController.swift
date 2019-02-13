@@ -30,8 +30,7 @@ class ViewController: UIViewController {
         catImageView.layer.borderColor = UIColor.white.cgColor
         catImageView.layer.cornerRadius = 10.0
         catImageView.layer.borderWidth = 1.0
-        catImageView.layer.masksToBounds = true        
-        
+        catImageView.layer.masksToBounds = true                
     }
 
 
